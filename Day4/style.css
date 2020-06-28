@@ -1,0 +1,53 @@
+.container {
+  background: beige;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  /* 중심축에서 아이템 배치 */
+  justify-content: space-around;
+
+  /* 중심축의 반대편에서 아이템 배치 */
+  align-items: center
+}
+
+.item {
+  width: 40px;
+  height: 40px;
+  border: 1px solid black;
+}
+
+.item1 {
+  background: red;
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 60%;
+}
+.item2 {
+  background: orange;
+  flex-grow: 2;
+}
+.item3 {
+  background: yellow;
+}
+.item4 {
+  background: green;
+}
+.item5 {
+  background: blue;
+}
+.item6 {
+  background: navy;
+}
+.item7 {
+  background: purple;
+}
+.item8 {
+  background: pink;
+}
+.item9 {
+  background: grey;
+}
+.item10 {
+  background: black;
+}

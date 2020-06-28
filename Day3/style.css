@@ -1,0 +1,38 @@
+div, span {
+  width: 80px;
+  height: 80px;
+  margin: 20px;
+  background: pink;
+}
+
+div {
+  background: red;
+  /* display: inline-block; */
+
+}
+
+span {
+  background: Blue;
+  display: block;
+}
+
+.container {
+  background: yellow;
+  left: 20px;
+  top: 20px;
+  position: relative;
+}
+
+.box {
+  background: blue;
+  left: 20px;
+  top: 20px;
+  position: absolute;
+
+  /*
+  position: absolute -> 내가 담겨있는 상자 기준
+  position: relative -> 원래 있어야할 곳 기준  
+  position: fixed -> 상자에서 완전히 벗어나서 페이지 기준
+  position: sticky -> scroll 시에도 고정
+  */
+}
