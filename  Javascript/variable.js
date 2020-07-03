@@ -7,7 +7,7 @@
 'use strict';
 
 
-// 2. Variable
+// 2. Variable, rw(read/write)
 // let (added in ES6)
 {
   let name = 'chan';
@@ -30,7 +30,7 @@ console.log(name);
 console.log(age);
 
 
-// 3. const
+// 3. Constant r(read olny)
 // 한번 선언하고 값을 할당하면 변경이 안된다.
 // favor immutable data type always for a few reasons:
 // - security
@@ -39,10 +39,17 @@ console.log(age);
 const daysInWeek = 7;
 const maxNumber = 5;
 
+// Note!
+// Immutable data tyeps: premitive types, frozen objects (i.e. object.freeze())
+// Mutable data types: all objects by default are mutable in JS
+// favor immutable data type always for a few reason:
+// - security
+// - thread safety
+// - reduce human mistakes
 
 // 4. Variable types
 // primitive, single item: number, string, boolean, null, undefined, symbol
-// object, box container
+// object, box container 
 // function, first-class function
 
 const count = 17; // integer
@@ -113,7 +120,7 @@ text = '7' + 5;
 console.log(`value: ${text}, type: ${typeof text}`);
 text = '8' / '2';
 console.log(`value: ${text}, type: ${typeof text}`);
-// console.log(text.charAt(0));
+console.log(text.charAt(0));
 
 
 // object, real-life object, data structure
